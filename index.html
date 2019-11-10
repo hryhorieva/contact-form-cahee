@@ -17,44 +17,49 @@
             <div class="caption">For new projects, ideas, business or anything
                 you'd like to discuss, contact with me!</div>
         </div>
-        <div class="form__row">
-            <div class="form__element form__element--row-element form__element--stretch">
-                <div>
-                    <input class="form__element--ctrl form__element--name" type="text" placeholder="Your name..."
-                        data-mask="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" required>
-                </div>
-                <div>
-                    <input class="form__element--ctrl form__element--email" type="email" placeholder="Your email..."
-                        required>
-                </div>
-                <div>
-                    <input class="form__element--ctrl form__element--phone" type="tel"
-                        placeholder="Your phone number..." data-mask="(000) 00 00 000" required>
-                </div>
-                <div>
-                    <textarea class="form__element--ctrl form__element--message" name="/" id="/"
-                        placeholder="Your message..."></textarea>
+
+        <div class="grid-wrapper">
+            <div class="row">
+                <div class="row__content row__content--form">
+                    <div>
+                        <input class="row__content--ctrl row__content--name" type="text" placeholder="Your name..."
+                            data-mask="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA" required>
+                    </div>
+                    <div>
+                        <input class="row__content--ctrl row__content--email" type="email" placeholder="Your email..."
+                            required>
+                    </div>
+                    <div>
+                        <input class="row__content--ctrl row__content--phone" type="tel"
+                            placeholder="Your phone number..." data-mask="(000) 00 00 000" required>
+                    </div>
+                    <div>
+                        <textarea class="row__content--ctrl row__content--message" name="/" id="/"
+                            placeholder="Your message..."></textarea>
+                    </div>
                 </div>
             </div>
-            <div class="form__element">
-                <div class="form__element--contacts"> ADDRESS
-                    <div class="form__element--data">123 City name, Street, City, Country</div>
-                </div>
-                <div class="form__element--contacts"> EMAIL
-                    <div class="form__element--data">cahee@domain.com</div>
-                </div>
-                <div class="form__element--contacts"> PHONE
-                    <div class="form__element--data">+012 345 6789</div>
-                </div>
 
+            <div class="row">
+                <div class="row__content row__content--address">
+                    <div class="row__content--contacts"> ADDRESS
+                        <div class="row__content--data">123 City name, Street, City, Country</div>
+                    </div>
+                    <div class="row__content--contacts"> EMAIL
+                        <div class="row__content--data">cahee@domain.com</div>
+                    </div>
+                    <div class="row__content--contacts"> PHONE
+                        <div class="row__content--data">+012 345 6789</div>
+                    </div>
+                </div>
             </div>
 
         </div>
     </div>
     <div class="footer">
-        <div class="footer__element">© 2015 Company. All right reserved.</div>
-        <div class="footer__element footer__element--logo">Cahee</div>
-        <div class="footer__element">Made with <span class="footer__emphasize">love</span> by Auskteez</div>
+        <div class="footer__content">© 2015 Company. All right reserved.</div>
+        <div class="footer__content footer__content--logo">Cahee</div>
+        <div class="footer__content">Made with <span class="footer__emphasize">love</span> by Auskteez</div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"

@@ -1,8 +1,8 @@
 body {
     background: #ffffff;
     text-decoration: none;
-    width: 100%;
-    height: 100%;
+    background-image: url(img/bg.jpg);
+    background-size: cover;
 }
 
 body, form, div, p, a, img, h1, h2, h3, h4, h5, h6, table, table tr, table td {
@@ -55,18 +55,14 @@ h1, h2 {
 }
 
 .main {
-    background: #ffffff;
-    text-decoration: none;
-    width: 100%;
-    background-image: url(img/bg.jpg);
-    background-size: cover;
+    max-width: 1170px;
     margin: 0 auto;
 }
 
 .title {
-    width: 1170px;
-    margin: 0 auto;
+    width: 100%;
     padding: 100px 0 45px 0;
+    text-align: center;
 }
 
 .h1 {
@@ -87,24 +83,22 @@ h1, h2 {
     text-align: center;
 }
 
-.form__row {
+.grid-wrapper {
     display: flex;
-    margin: 0 auto;
-    padding: 0 0 122px 0;
 }
 
-.form__element {
-    width: 100%;
-    margin-right: 170px;
-}
-
-.form__element--stretch {
+.row {
     flex-grow: 1;
 }
 
-.form__element--ctrl {
-    width: 500px;
-    margin: 0 0 15px 165px;
+.row__content--form {
+    padding: 0 100px 0 100px;
+}
+
+
+.row__content--ctrl {
+    width: 100%;
+    margin: 0 0 15px 0;
     background-color: #7fe1e1;
     opacity: 0.5;
     border: 5px solid transparent;
@@ -127,25 +121,25 @@ textarea::placeholder {
     opacity: 0.9;
 }
 
-.form__element--ctrl:focus{
+.row__content--ctrl:focus{
     color: #ffffff;
     font-weight: bold;
     border-left-color: #355b82;
     background-color: #00c4c4;
 }
 
-.form__element--message {
+.row__content--message {
     resize: none;
     height: 250px;
 }
 
-.form__element--contacts {
+.row__content--contacts {
     font-size: 17px;
     font-weight: bold;
     color: #262626;
 }
 
-.form__element--data {
+.row__content--data {
     margin: 10px 0 20px 0;
     padding: 0 0 10px 0;
 }
@@ -156,7 +150,7 @@ textarea::placeholder {
     width: 100%;
 }
 
-.footer__element {
+.footer__content {
     color: #b9b9b9;
     font-size: 16px;
     font-weight: 300;
@@ -164,7 +158,7 @@ textarea::placeholder {
     flex-grow: 1;
 }
 
-.footer__element--logo {
+.footer__content--logo {
     font-family: 'Pacifico', cursive;
     font-size: 25px;
     text-align: center;
@@ -175,15 +169,27 @@ textarea::placeholder {
     font-weight: bold;
 }
 
-.form__element--name:invalid {
+.row__content--name:invalid {
     background-color: #e07e8e;
 
 }
 
-.form__element--email:invalid {
+.row__content--email:invalid {
     background-color: #e07e8e;
 }
 
-.form__element--phone:invalid {
+.row__content--phone:invalid {
     background-color: #e07e8e;
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    .grid-wrapper {
+        flex-direction: column;
+    }
+
+    .row__content--address {
+        padding: 0 0 0 100px;
+    }
 }
